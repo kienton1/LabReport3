@@ -55,8 +55,8 @@ The code that was their before was wrong because it would iterate through the ar
 grep -r "2024" ./technical > output.txt
 ```
 **Output:**
-./technical/government/Gen_Account_Office/d01591sp.txt:begins to decline. By 2024, gross national saving as a share of GDP
-./technical/biomed/cc350.txt:        (Pulsiocath 2024 L, Pulsion, Munich, Germany) and 24 h
+`./technical/government/Gen_Account_Office/d01591sp.txt:begins to decline. By 2024, gross national saving as a share of GDP
+./technical/biomed/cc350.txt:        (Pulsiocath 2024 L, Pulsion, Munich, Germany) and 24 h`
 **Explaination**
 The grep -r "2024"./technical > output.txt command does a recursive search for the string "2024" across all files located in the `./technical` directory, redirecting the results to the `output.txt file. This command is helpful for locating instances of a certain string across several files and directories, such as a specified year or any other pattern. It is possible to conduct additional analysis or document the search results by saving the output to a file.
 
@@ -65,7 +65,7 @@ The grep -r "2024"./technical > output.txt command does a recursive search for t
 grep -r "California" ./technical > output.txt
 ```
 **Output:**
-./technical/government/About_LSC/Progress_report.txt:Texas, Missouri, California, and Indiana who are actively and
+`./technical/government/About_LSC/Progress_report.txt:Texas, Missouri, California, and Indiana who are actively and
 ./technical/government/About_LSC/Progress_report.txt:conferences in Alabama, Arkansas, California, Colorado,
 ./technical/government/About_LSC/Progress_report.txt:three years. Arizona, Arkansas, California, Illinois, Kentucky, New
 ./technical/government/About_LSC/Progress_report.txt:In 2001, California held its largest meeting of legal services
@@ -558,7 +558,7 @@ grep -r "California" ./technical > output.txt
 ./technical/911report/chapter-7.txt:                an English as a second language program in Oakland, California, which he had
 ./technical/911report/chapter-8.txt:                    California in the mid-1990s. A clandestine source said in 1998 that a Bin Ladin
 ./technical/911report/chapter-8.txt:            In June 2000, Mihdhar left California and returned to Yemen. It is possible that if,
-./technical/911report/chapter-11.txt:                California went on the watch for his like.
+./technical/911report/chapter-11.txt:                California went on the watch for his like.`
 **Explaination**
 The grep -r "California"./technical > output.txt command does a recursive search for the string "California" across all files located in the `./technical` directory, redirecting the results to the `output.txt file. This command is helpful for locating instances of a certain string across several files and directories, such as a specified year or any other pattern. This essentially looks for everything that has California in it and then outputs it in the text file.
 
@@ -567,16 +567,16 @@ The grep -r "California"./technical > output.txt command does a recursive search
 grep -i "pattern" ./technical/911report/chapter-1.txt
 ```
 **Output:**
-The FAA cleared the airspace. Radar data show that at 9:13, when the Otis fighters were about 115 miles away from the city, the fighters exited their holding pattern and set a course direct for Manhattan. They arrived at 9:25 and established a combat air patrol (CAP) over the city.
+`The FAA cleared the airspace. Radar data show that at 9:13, when the Otis fighters were about 115 miles away from the city, the fighters exited their holding pattern and set a course direct for Manhattan. They arrived at 9:25 and established a combat air patrol (CAP) over the city.
 **Explaination:**
-Here, the -i argument enables case-insensitivity in the search, enabling grep to match terms like "Pattern", "pattern", "PaTTern", and so on in the file chapter-1.txt located in the./technical directory. This is useful if you want to look for a pattern without being concerned about the search's case sensitivity.
+Here, the -i argument enables case-insensitivity in the search, enabling grep to match terms like "Pattern", "pattern", "PaTTern", and so on in the file chapter-1.txt located in the./technical directory. This is useful if you want to look for a pattern without being concerned about the search's case sensitivity.`
 
 **Input:**
 ```
 grep -i "success" ./technical/911report/chapter-9.txt 
 ```
 **Output**
-                delays and were in some cases unsuccessful. Many calls were also prematurely
+`                delays and were in some cases unsuccessful. Many calls were also prematurely
                 debris, several officers entered the plaza and successfully rescued at least one
                 company successfully rescued some civilians who were trapped on the 22nd floor as a
                 successfully descended to the lobby, where another firefighter then persuaded them
@@ -586,7 +586,7 @@ grep -i "success" ./technical/911report/chapter-9.txt
                 civilians trapped on the 22d floor of the North Tower, or the success of FDNY, PAPD,
             A separate matter is the varied success at conveying evacuation instructions to
                 personnel in the North Tower after the South Tower's collapse. The success of NYPD
-            The same three factors worked against successful communication among FDNY personnel.
+            The same three factors worked against successful communication among FDNY personnel.`
 **Explaination:**
 This command searches chapter-9.txt for the word "success" without regard to case. It's useful if you want to locate instances of a term, capitalization or not.
 
@@ -595,7 +595,7 @@ This command searches chapter-9.txt for the word "success" without regard to cas
 find ./technical -type f -exec grep -l "pattern" {} \;
 ```
 **Output:**
-./technical/government/About_LSC/Strategic_report.txt
+`./technical/government/About_LSC/Strategic_report.txt
 ./technical/government/Env_Prot_Agen/multi102902.txt
 ./technical/government/Env_Prot_Agen/jeffordslieberm.txt
 ./technical/government/Env_Prot_Agen/ctf7-10.txt
@@ -1281,7 +1281,7 @@ find ./technical -type f -exec grep -l "pattern" {} \;
 ./technical/911report/chapter-6.txt
 ./technical/911report/chapter-7.txt
 ./technical/911report/chapter-8.txt
-./technical/911report/chapter-11.txt
+./technical/911report/chapter-11.txt`
 
 **Explaination**
 Using grep, this command looks for the word "California" in all regular files under the./technical directory. By looking just for regular files (-type f) in the designated directory, the find command avoids directory-searching failures.
@@ -1292,7 +1292,7 @@ find ./technical -type f -exec grep -l "apple" {} \;
 ```
 
 **Output:**
-./technical/government/About_LSC/commission_report.txt
+`./technical/government/About_LSC/commission_report.txt
 ./technical/government/Gen_Account_Office/Testimony_cg00010t.txt
 ./technical/government/Gen_Account_Office/Oct15-2001_d0224.txt
 ./technical/government/Media/Law_Schools.txt
@@ -1305,7 +1305,8 @@ find ./technical -type f -exec grep -l "apple" {} \;
 ./technical/biomed/gb-2002-3-10-research0053.txt
 ./technical/biomed/1471-2458-3-11.txt
 ./technical/biomed/1471-2202-2-5.txt
-./technical/911report/chapter-8.txt
+./technical/911report/chapter-8.txt`
+
 
 **Explaination:**
 Using grep, this command looks for the word "apple" in all regular files located in the./technical directory. The find tool searches the designated directory for regular files only (-type f). For each file it finds, it runs grep -l "apple" to list all filenames that contain the word "apple." This method aids in preventing mistakes that arise when looking through directories.
@@ -1315,8 +1316,8 @@ Using grep, this command looks for the word "apple" in all regular files located
 grep -n "pattern" ./technical/911report/chapter-1.txt
 ```
 **Output:**
-304:    Radar data show the Otis fighters were airborne at 8:53. Lacking a target, they were vectored toward military-controlled airspace off the Long Island coast. To avoid New York area air traffic and uncertain about what to do, the fighters were brought down to military airspace to "hold as needed." From 9:09 to 9:13, the Otis fighters stayed in this holding pattern.
-384:    The FAA cleared the airspace. Radar data show that at 9:13, when the Otis fighters were about 115 miles away from the city, the fighters exited their holding pattern and set a course direct for Manhattan. They arrived at 9:25 and established a combat air patrol (CAP) over the city.
+`304:    Radar data show the Otis fighters were airborne at 8:53. Lacking a target, they were vectored toward military-controlled airspace off the Long Island coast. To avoid New York area air traffic and uncertain about what to do, the fighters were brought down to military airspace to "hold as needed." From 9:09 to 9:13, the Otis fighters stayed in this holding pattern.
+384:    The FAA cleared the airspace. Radar data show that at 9:13, when the Otis fighters were about 115 miles away from the city, the fighters exited their holding pattern and set a course direct for Manhattan. They arrived at 9:25 and established a combat air patrol (CAP) over the city.`
 **Explaination**
 The file `chapter-1.txt` in the `./technical/911report` directory is searched for the given "pattern" using the command `grep -n "pattern"./technical/911report/chapter-1.txt`. You can easily find the location of the pattern in the file by using the `-n` option, which prefixes each matching line with its line number. This helps identify individual instances of the pattern and comprehend its context in the text document.The file `chapter-1.txt` in the `./technical/911report` directory is searched for the given "pattern" using the command `grep -n "pattern"./technical/911report/chapter-1.txt`. You can easily find the location of the pattern in the file by using the {-n` option, which prefixes each matching line with its line number. This helps identify individual instances of the pattern and comprehend its context in the text document.
 
@@ -1325,7 +1326,7 @@ The file `chapter-1.txt` in the `./technical/911report` directory is searched fo
 grep -n "pattern" ./technical/911report/chapter-2.txt 
 ```
 **Output:**
-460:            This pattern of expansion through building alliances extended to the United States. A
+`460:            This pattern of expansion through building alliances extended to the United States. A`
 **Exaplination**
 Same as above explaination, but not it was done one txt file chapter-2.
 
